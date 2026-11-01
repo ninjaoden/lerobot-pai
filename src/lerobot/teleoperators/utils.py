@@ -55,6 +55,10 @@ def make_teleoperator_from_config(config: TeleoperatorConfig) -> "Teleoperator":
         from .so_leader import SO101Leader
 
         return SO101Leader(config)
+    elif config.type == "nmini_leader":
+        from .nmini_leader import NMiniLeader
+
+        return NMiniLeader(config)
     elif config.type == "mock_teleop":
         from tests.mocks.mock_teleop import MockTeleop
 
@@ -99,6 +103,10 @@ def make_teleoperator_from_config(config: TeleoperatorConfig) -> "Teleoperator":
         from .openarm_mini import OpenArmMini
 
         return OpenArmMini(config)
+    elif config.type == "quest3":
+        from .quest3 import Quest3
+
+        return Quest3(config)
     else:
         try:
             return cast("Teleoperator", make_device_from_device_class(config))

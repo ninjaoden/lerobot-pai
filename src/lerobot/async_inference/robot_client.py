@@ -52,6 +52,7 @@ from lerobot.cameras.realsense.configuration_realsense import RealSenseCameraCon
 from lerobot.robots import (
     RobotConfig,  # noqa: F401
     make_robot_from_config,
+    nmini_follower,  # noqa: F401
 )
 from lerobot.transport import (
     services_pb2,  # type: ignore

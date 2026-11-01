@@ -42,6 +42,7 @@ from lerobot.robots import (  # noqa: F401
     koch_follower,
     lekiwi,
     make_robot_from_config,
+    nmini_follower,
     omx_follower,
     openarm_follower,
     so_follower,
@@ -54,8 +55,10 @@ from lerobot.teleoperators import (  # noqa: F401
     homunculus,
     koch_leader,
     make_teleoperator_from_config,
+    nmini_leader,
     omx_leader,
     openarm_leader,
+    quest3,
     so_leader,
     unitree_g1,
 )

@@ -34,6 +34,7 @@ from lerobot.robots import (  # noqa: F401
     koch_follower,
     lekiwi,
     make_robot_from_config,
+    nmini_follower,
     omx_follower,
     so_follower,
 )
@@ -42,6 +43,7 @@ from lerobot.teleoperators import (  # noqa: F401
     bi_so_leader,
     koch_leader,
     make_teleoperator_from_config,
+    nmini_leader,
     omx_leader,
     openarm_mini,
     so_leader,
@@ -50,7 +52,9 @@ from lerobot.teleoperators import (  # noqa: F401
 COMPATIBLE_DEVICES = [
     "koch_follower",
     "koch_leader",
+    "nmini_leader",
     "omx_follower",
+    "nmini_follower",
     "omx_leader",
     "openarm_mini",
     "so100_follower",
